@@ -1,3 +1,7 @@
-<app-gabarit-full-width [title]="myTitle">
+<app-gabarit-full-width [title]="myTitle" *ngIf="collection">
   <button (click)="changeTitle()">change title</button>
+
+  <app-table-light [collection]='collection' [headers]="headers"></app-table-light>
+  <app-btn></app-btn>
+
 </app-gabarit-full-width>
